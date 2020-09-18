@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let flag=false;
+
+    let resutl ='';
+    let vietnamese=['xinh đẹp','buồn','tốt'];
+    let english= ['beatyfull','sad','good'];
+
+        function searchWord(){
+            let word=prompt('nhap tu can dich');
+            for (let i = 0; i < english.length; i++) {
+                if(word==english[i]){
+                    resutl=vietnamese[i]
+                    flag=true;
+                    alert(resutl);
+                }
+            }
+            if(flag==true){
+                alert('tim duoc tu');
+            }else {
+                alert('khong tim duoc tu');
+                searchWord();
+            }
+
+
+        }
+    searchWord();
+
+
+
+
+</script>
+
+</body>
+</html>
